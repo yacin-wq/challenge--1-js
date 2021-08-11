@@ -1,0 +1,324 @@
+body{
+    font-family: 'Space Mono', monospace;
+    height: 97vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+    letter-spacing: 8px;
+    color: hsl(183, 100%, 15%);
+    font-weight: bolder;
+    padding-bottom: 3em;
+}
+
+
+
+.section-center{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-container{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: fit-content;
+    padding: 2em;
+    padding-left: 0;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 40px;
+}
+
+
+/* output  */
+
+.output-space{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 50vh;
+    background-color:hsl(183, 100%, 15%);
+    border-radius: 20px;
+    padding: 3em;
+}
+
+.output-tip{
+    line-height: 100px;
+}
+
+.tip-amount, .total{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-part-tip, .right-part-tot{
+    color: hsl(185, 41%, 84%);
+    font-size: 30px;
+    width: 3em;
+    overflow: hidden;
+}
+
+button{
+    outline: hidden;
+    border: 0;
+    box-shadow: none;
+    font-size: 10px;
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Space Mono', monospace;
+}
+
+h1{
+    font-size: 20px;
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+}
+h4{
+    font-size: 16px;
+    margin: 0;
+    color: hsl(185, 41%, 84%);
+}
+
+span{
+    font-size: 30px;
+    color: hsl(185, 41%, 84%);
+}
+
+.left-part{
+    line-height: 30px;
+}
+
+.btn-set{
+    width: 100%;
+    font-size: 24px;
+    margin: 0;
+    color: hsl(183, 100%, 15%);
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 5px;
+    padding: 0;
+    border-radius: 10px;
+    height: 2.5em;
+    background-color: hsl(172, 67%, 45%);
+    outline: none;
+    box-shadow: none;
+    border: none;
+    transition:all 0.2s ease ;
+    cursor: pointer;
+}
+
+.btn-set:hover{
+    background-color: hsl(185, 41%, 84%);
+}
+
+.btn-non{
+    background-color: hsl(186, 14%, 43%);
+}
+
+
+/* input */
+.input-space{
+    width: 100%;
+    height: 59vh;
+    padding: 0 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+
+.input-space h1{
+    color: hsl(183, 100%, 15%);
+}
+
+.bill-input{
+    line-height: 40px;
+}
+
+#peoplenum-input, #bill-input{
+    outline: none;
+    width: 94%;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    border: none;
+    height: 2em;
+    font-weight: bolder;
+    background-color: transparent;
+    padding-right: 5%;
+    cursor: pointer;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+
+/* percentage-part */
+
+.percentage-part{
+    width: 100%;
+    line-height: 40px;
+}
+
+.btn-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    justify-content: space-around;
+}
+
+.percentage{
+    font-size: 30px;
+    background-color: hsl(183, 100%, 15%);
+    margin: 0.2em;
+    width: 3.7em;
+    height: 2em;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Space Mono', monospace;
+
+}
+
+.no-of-peaple{
+    line-height: 40px;
+}
+
+.text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.non{
+    display: block!important ;
+}
+
+.error{
+    color: red!important ;
+    display: none;
+}
+
+.percentage:hover, .hover{
+    background-color: hsl(172, 67%, 45%);
+}
+
+
+
+.percentage:last-child{
+    font-size: 29px;
+    background-color: hsl(185, 41%, 84%);
+    outline: none;
+    border: none;
+}
+
+.bill{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.img{
+    padding-left: 10px;
+    width: 0.3em;
+
+}
+
+@media only screen and (max-width: 412px) {
+    body{
+        max-width: 412px;
+    }
+
+    
+    .section-container{
+        max-width: 412px;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+        padding: 1em;
+        padding-top: 2em;
+        margin-top: 5em;
+    }
+    .section-center{
+        justify-content: unset;
+        align-items: unset;
+        max-width: 412px;
+        padding-top: 2em;
+    }
+
+    .title{
+        width: 100%;
+        text-align: center;
+        letter-spacing: 8px;
+        color: hsl(183, 100%, 15%);
+        font-weight: bolder;
+    }
+    .input-space{
+        padding: 0;
+        padding-bottom: 3em;
+        margin: 0 auto;
+    }
+
+    .output-space{
+        padding: 2em;
+        height: unset;
+    }
+    
+    h1{
+        font-size: 15px;
+    }
+    h4{
+        font-size: 13px;
+    }
+    
+    span{
+        font-size: 30px;
+        color: hsl(185, 41%, 84%);
+    }
+    
+    .percentage{
+        width: 3.8em;
+    }
+
+    .btn-container{
+        justify-content: space-around;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .percentage{
+        width: 5.3em;
+    }
+}
+
+
